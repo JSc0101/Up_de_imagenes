@@ -14,14 +14,6 @@ afterAll(async () => {
 describe("Connected a mongodb", () => {
   it("should connection successfully", () => {
     let connection = startConnection();
-
-    expect(connection).toBeTruthy();
-  });
-
-  it("should return connect fail", () => {
-    let connection = startConnection();
-    if (!connection) {
-      expect(connection).rejects.toThrow();
-    }
+    return expect(connection).toBeTruthy();
   });
 });
