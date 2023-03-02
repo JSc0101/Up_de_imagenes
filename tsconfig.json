@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                      
-    "module": "commonjs",                                
-    "rootDir": "./src",                                 
-    "moduleResolution": "node",                       
-    "outDir": "./dist",                                   
-    "esModuleInterop": true,                             
-    "forceConsistentCasingInFileNames": true,            
-    "strict": true,                                      
+    "types": ["@types/node", "@types/babel__core", "jest"],
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "skipLibCheck": true,
-    "sourceMap": true                             
-  }
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
