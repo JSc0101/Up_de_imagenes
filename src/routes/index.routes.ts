@@ -1,5 +1,7 @@
 import { Router } from "express";
+import { routeGet } from "../controllers/controllers";
 
 const router = Router();
 
-export default router
+router.get("/", routeGet);
+export default router;
